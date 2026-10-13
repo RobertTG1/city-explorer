@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="logo">
+        <h1>City Explorer</h1>
+    </div>
+    <nav class="menu">
+        <a href="#destinatii">Destinații</a>
+        <a href="#planifica">Planifică</a>
+        <a href="#recomandari">Recomandări</a>
+    </nav>
+</header>
+
+<main class="main-content">
+    <!-- 1. Destinații -->
+    <section id="destinatii" class="section">
+        <h2>Destinații de vizitat</h2>
+        <div class="cards">
+            <article class="card featured">
+                <h3>Roma</h3>
+                <p class="country"><strong>Țara:</strong> Italia</p>
+                <p>Orașul Etern, renumit pentru Colosseum, Fontana di Trevi și gastronomia legendară.</p>
+                <p class="duration"><em>Durată recomandată:</em> 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Lisabona</h3>
+                <p class="country"><strong>Țara:</strong> Portugalia</p>
+                <p>Orașul celor șapte coline, faimos pentru tramvaiul 28, pasteis de nata și cartierul Alfama.</p>
+                <p class="duration"><em>Durată recomandată:</em> 3 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Praga</h3>
+                <p class="country"><strong>Țara:</strong> Cehia</p>
+                <p>Orașul celor o sută de turnuri, cu Podul Carol și un centru istoric spectaculos.</p>
+                <p class="duration"><em>Durată recomandată:</em> 3 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Viena</h3>
+                <p class="country"><strong>Țara:</strong> Austria</p>
+                <p>Capitala imperială plină de palate istorice, muzee de artă și cafenele clasice.</p>
+                <p class="duration"><em>Durată recomandată:</em> 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Barcelona</h3>
+                <p class="country"><strong>Țara:</strong> Spania</p>
+                <p>Arhitectura lui Gaudí, plaje însorite și atmosfera vibrantă de pe La Rambla.</p>
+                <p class="duration"><em>Durată recomandată:</em> 5 zile</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- 2. Planifică -->
+    <section id="planifica" class="section">
+        <h2>Planifică o călătorie</h2>
+        <form class="plan-form" action="#" method="get">
+            <div class="form-group">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" placeholder="Numele tău complet" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Alege o destinație...</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Praga">Praga</option>
+                    <option value="Viena">Viena</option>
+                    <option value="Barcelona">Barcelona</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" min="1" max="30" placeholder="Ex: 3" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Planifică excursia</button>
+        </form>
+    </section>
+
+    <!-- 3. Recomandări -->
+    <section id="recomandari" class="section">
+        <h2>Recomandări și sfaturi utile</h2>
+        <ul class="recommendations-list">
+            <li>Rezervă biletele pentru muzee și atracții principale online cu câteva săptămâni înainte.</li>
+            <li>Folosește transportul în comun sau cardurile turistice de oraș pentru reduceri la transport.</li>
+            <li>Alege să iei masa la bistrourile locale situate la câteva străzi distanță de piețele centrale.</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Moraru Robert Luca. Proiect realizat pentru Tehnologii Web.</p>
+</footer>
+</body>
+</html>
