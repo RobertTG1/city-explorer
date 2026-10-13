@@ -61,7 +61,7 @@ body {
 /* 3. Grid pentru Cardurile Destinații */
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 24px;
 }
 
@@ -176,4 +176,12 @@ body {
     color: #6c757d;
     margin-top: 40px;
     font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
 }
